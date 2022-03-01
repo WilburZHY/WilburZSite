@@ -15,4 +15,4 @@ class BlogArticles(models.Model):
     def __str__(self):  # 得到想要的易于人阅读的对象的信息
         return self.title
 
-    print('success')
+    print('success深圳易博科')
