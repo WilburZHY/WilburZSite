@@ -7,19 +7,20 @@
 {% load static %}
 
 <div class="row text-center vertical-middle-sm">
-    <h1>Wellcome To My World</h1>
+    <h2>Wellcome To My BLOG</h2>
 </div>
 <div class="row">
     <div class="col-xs-12 col-md-8">
     <ul>
     {% for blog in blogs %}
-        <li><a href="{{ blog.id }}">{{ blog.title }}</a></li>
+        <li><a href="{{ blog.id }}">{{ blog.publish }}<br>{{ blog.title }}</a></li>
+        <br>
     {% endfor %}
     </ul>
     </div>
     <div class="col-xs-6 col-md-4">
-        <h2>广告</h2>
-        <p>跟老齐学：www.itdiffer.com</p>
+        <h3>欢迎互相学习交流</h3>
+        <p>Email:wilburzzz@qq.com</p>
         <img src="{% static '/images/mouse.jpg' %}" width="100px">
     </div>
 </div>
